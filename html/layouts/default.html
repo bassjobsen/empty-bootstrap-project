@@ -1,0 +1,24 @@
+{% if env == 'development' %}
+{% set css_path="/css/app.css" %}
+{% set js_path="/js/app.js" %}
+{% else %}
+{% set css_path="/css/app.min.css" %}
+{% set js_path="/js/app.min.js" %}
+{% endif %}<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    
+    <title> Bootstrap 4 project :: {% block pagetitle %}{% endblock %}</title>
+    
+    <!--Bootstrap CSS -->
+      <link rel="stylesheet" href="{{ css_path }}">
+  </head>
+  <body>
+    {% block content %}{% endblock %} 
+    {% include "html/includes/footerjavascripts.html" %}
+  </body>  
+</html>
