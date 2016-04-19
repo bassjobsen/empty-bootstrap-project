@@ -1,7 +1,7 @@
 {
   "name": "empty-bootstrap-project",
   "version": "0.0.1",
-  "description": "An empty new Bootstap project. Powered by nunjucks, Sass and Grunt.",
+  "description": "An empty new Bootstrap project. Powered by nunjucks, Sass and Grunt.",
   "main": "Gruntfile.js",
   "devDependencies": {
     "autoprefixer": "^6.0.3",
