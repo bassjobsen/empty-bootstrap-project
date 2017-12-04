@@ -17,9 +17,16 @@ module.exports = function (grunt) {
   }
   
   var mq4HoverShim = require('mq4-hover-shim');
-  //var autoprefixerSettings = require(config.bower.path + 'bootstrap/grunt/autoprefixer-settings.js');
-  //var autoprefixer = require('autoprefixer')(autoprefixerSettings);
-  var autoprefixer = require('autoprefixer');
+  var autoprefixer = require('autoprefixer')([
+    "Chrome >= 45",
+    "Firefox ESR",
+    "Edge >= 12",
+    "Explorer >= 10",
+    "iOS >= 9",
+    "Safari >= 9",
+    "Android >= 4.4",
+    "Opera >= 30"
+  ]);
   // Project configuration.
   grunt.initConfig({
     
