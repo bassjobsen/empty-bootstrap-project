@@ -1,6 +1,6 @@
-# Empty Boostrap 4 Project
+# Empty Bootstrap 4 Project
 
-Empty [Bootstrap 4](http://v4-alpha.getbootstrap.com/) Project. It includes a Sass compiler and a set of nunjucks HTML templates for you. [nunjucks](https://github.com/mozilla/nunjucks) is a powerful templating engine for JavaScript with inheritance, asynchronous control, and more (jinja2 inspired).
+Empty [Bootstrap 4](https://getbootstrap.com/) Project. It includes a Sass compiler and a set of nunjucks HTML templates for you. [nunjucks](https://github.com/mozilla/nunjucks) is a powerful templating engine for JavaScript with inheritance, asynchronous control, and more (jinja2 inspired).
 
 ## Installation
 
@@ -40,7 +40,6 @@ Then open the folder in your command line, and install the needed dependencies:
 ```bash
 cd projectname
 npm install
-bower install
 ```
 
 Finally, run `npm start` to run the Sass and HTML template compiler. They will re-run every time you save a Sass or HTML temaplate file.
