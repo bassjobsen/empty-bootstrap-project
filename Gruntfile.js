@@ -13,7 +13,7 @@ module.exports = function (grunt) {
 
 
   var config = {
-    bower: { path: 'bower_components/'}
+    node: { path: 'node_modules/'}
   }
   
   var mq4HoverShim = require('mq4-hover-shim');
@@ -33,16 +33,16 @@ module.exports = function (grunt) {
     concat: {
       bootstrap: {
         src: [
-          '<%= config.bower.path %>jquery/dist/jquery.min.js',
-          '<%= config.bower.path %>tether/dist/js/tether.min.js',
-          '<%= config.bower.path %>bootstrap/dist/js/bootstrap.min.js'
+          '<%= config.node.path %>jquery/dist/jquery.min.js',
+          '<%= config.node.path %>popper.js//dist/umd/popper.min.js',
+          '<%= config.node.path %>bootstrap/dist/js/bootstrap.min.js'
         ],
         dest: '_site/js/app.js'
       }
     },
     sass: {
       options: {
-        includePaths: [config.bower.path ],
+        includePaths: [ '<%= config.node.path %>bootstrap/scss' ],
         precision: 6,
         sourceComments: false,
         sourceMap: true,
